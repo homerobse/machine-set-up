@@ -1,1 +1,2 @@
 top # shows the processes running
+htop # similar to top, but more interactive
