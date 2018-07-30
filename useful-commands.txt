@@ -1,0 +1,3 @@
+top # shows the processes running
+htop # similar to top, but more interactive
+xargs # I think it is to execute commands giving parameters that I computed with bash. E.g.: ls | grep filename | xargs cat
