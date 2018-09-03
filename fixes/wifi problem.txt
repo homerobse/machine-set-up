@@ -1,0 +1,11 @@
+useful comands when dealing with kernel modules:
+
+~$modinfo module_name  # get information about a module
+~$lsmod # list all modules running
+~$modprobe -rv module_name # verbose remove a module
+~$modprobe -v module_name module_option=option_value # verbose add a module e.g.: modprobe -v iwlmvm power_scheme=1
+~$grep [[:alnum:]] /sys/module/iwl*/parameters/* # see the options that the modules are running with
+~$sudo iwlist scan # check the strength of the wifi signal for each available network
+~$lspci | grep Network # search for the Network controller
+~$dmesg | grep iwlwifi # search for kernel messages related with iwlwifi
+~$ nmcli dev wifi list # show all available wifi networks names, speeds, and signal strength (in bars)

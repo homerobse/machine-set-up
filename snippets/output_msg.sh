@@ -1,3 +1,0 @@
-cat <<EOM 
-hello
-EOM

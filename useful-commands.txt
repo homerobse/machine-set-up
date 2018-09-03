@@ -1,3 +1,5 @@
 top # shows the processes running
 htop # similar to top, but more interactive
 xargs # I think it is to execute commands giving parameters that I computed with bash. E.g.: ls | grep filename | xargs cat
+grep -o -e expr1 -e expr2 # -o makes grep output only the matched expression, without its context. -e is used for starting a regular expression and we can use more than one
+uname -r # check kernel version
