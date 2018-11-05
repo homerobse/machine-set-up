@@ -38,3 +38,9 @@ sudo apt-get install ttf-mscorefonts-installer
 
 # fix cedilha
 source fixes/fix-cedilla
+
+# to preview files in GNOME install Gnome Sushi
+# https://www.howtogeek.com/277987/how-to-quickly-preview-a-file-in-ubuntus-file-manager-like-quick-look-in-macos/
+
+# install latex https://tex.stackexchange.com/questions/134365/installation-of-texlive-full-on-ubuntu-12-04
+sudo apt-get install texlive

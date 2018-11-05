@@ -9,3 +9,4 @@ useful comands when dealing with kernel modules:
 ~$lspci | grep Network # search for the Network controller
 ~$dmesg | grep iwlwifi # search for kernel messages related with iwlwifi
 ~$ nmcli dev wifi list # show all available wifi networks names, speeds, and signal strength (in bars)
+~$ iw dev wlp3s0 link # gives information about the network to which the computer is connected
