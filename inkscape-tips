@@ -1,0 +1,2 @@
+To crop an image
+Select the image and a rectangle covering the desired area(or another shape)->Object->Clip->Set

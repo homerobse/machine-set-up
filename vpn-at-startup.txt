@@ -1,0 +1,27 @@
+1 - Use this to set up the VPN
+https://ask.fedoraproject.org/en/question/10880/how-do-i-start-a-vpn-session-via-the-command-line/?answer=15623#post-id-15623
+
+edit file /etc/vpnc/default.conf to contain:
+    IPSec gateway vpn.ox.ac.uk
+    IPSec ID oxford
+    IPSec secret osiris
+    Xauth username sjoh4589
+    Xauth password net4phD
+
+
+2 - Use this to make it a service that will run in startup: https://timleland.com/how-to-run-a-linux-program-on-startup/
+$ sudo nano /etc/systemd/system/oxvpn.service
+
+
+
+Extra (in the phone they ask for these addresses to connect always thorugh the VPN): 
+To know the IP of the VPN address, run:
+$ dig +short vpn.ox.ac.uk
+163.1.94.21
+
+or
+$ host vpn.ox.ac.uk
+vpn.ox.ac.uk has address 163.1.94.21
+
+And the IP of the DNS server can be found in this Oxford IT link: https://help.it.ox.ac.uk/network/dns/dns-info
+IP address 163.1.2.1 maps to dns2.ox.ac.uk.
