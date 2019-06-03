@@ -1,16 +1,41 @@
-1 - Use this to set up the VPN
-https://ask.fedoraproject.org/en/question/10880/how-do-i-start-a-vpn-session-via-the-command-line/?answer=15623#post-id-15623
+1 - Use this to set up the VPN https://askbot.fedoraproject.org/en/question/10880/how-do-i-start-a-vpn-session-via-the-command-line/?answer=15623#post-id-15623
 
 edit file /etc/vpnc/default.conf to contain:
     IPSec gateway vpn.ox.ac.uk
     IPSec ID oxford
-    IPSec secret osiris
-    Xauth username sjoh4589
-    Xauth password net4phD
+    IPSec secret <OXFORD VPN PASSWORD LOOK AT https://register.it.ox.ac.uk/self/software https://help.it.ox.ac.uk/network/vpn/vpnc/index>
+    Xauth username <OXFORD_USERNAME>
+    Xauth password <OXFORD_EDUROAM_WIFI_PASSWORD>
 
+Then you can just run `sudo vpnc` and it should connect, and `sudo vpnc-disconnect` to disconnect
 
 2 - Use this to make it a service that will run in startup: https://timleland.com/how-to-run-a-linux-program-on-startup/
 $ sudo nano /etc/systemd/system/oxvpn.service
+"
+description=oxford_vpn
+
+Wants=network.target
+After=syslog.target network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/sbin/vpnc
+Restart=on-failure
+RestartSec=10
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
+"
+3 - Reload services
+    sudo systemctl daemon-reload
+4 - Enable the service
+    sudo systemctl enable YOUR_SERVICE_NAME
+5 - Start the service
+    sudo systemctl start YOUR_SERVICE_NAME
+6 - Check the status of your service
+    systemctl status YOUR_SERVICE_NAME
+7 - Reboot your device and the program/script should be running. If it crashes it will attempt to restart
 
 
 
