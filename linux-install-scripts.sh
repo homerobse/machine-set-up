@@ -44,3 +44,6 @@ source fixes/fix-cedilla
 
 # install latex https://tex.stackexchange.com/questions/134365/installation-of-texlive-full-on-ubuntu-12-04
 sudo apt-get install texlive
+
+# install alacarte: program for managing icons in the applications dash
+sudo apt-get install alacarte

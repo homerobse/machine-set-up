@@ -24,3 +24,10 @@ source <filename>
 # /usr/share/applications
 # ~/.local/share/applications
 # /var/lib/snapd/desktop/applications
+
+
+# git tips
+
+To get the remote version when in a conflict
+    git checkout --theirs PATH/FILE
+
