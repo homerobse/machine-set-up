@@ -1,15 +1,17 @@
 top # shows the processes running
 htop # similar to top, but more interactive
 xargs # I think it is useful to execute commands giving parameters that I computed with bash. E.g. to print contents of searched files: ls | grep filename | xargs cat
-grep -o -e expr1 -e expr2 # -o makes grep output only the matched expression, without its context. -e is used for starting a regular expression and we can use more than one
 uname -r # check kernel version
 fc-match <font-name> # check what font does fontconfig match with the given pattern (e.g. fc-match helvetica)
+
+# search
+grep -o -e expr1 -e expr2 # -o makes grep output only the matched expression, without its context. -e is used for starting a regular expression and we can use more than one
+grep -iwrn 'path-to-folder' -e 'pattern' -C5 # search for text in files:  i for ignore case, r for recurrent directory search, n for line number, w for match whole word, -Cn for n lines of context  https://stackoverflow.com/a/30138655/1273751
 
 # https://askubuntu.com/questions/157793/why-is-swap-being-used-even-though-i-have-plenty-of-free-ram
 # change swappiness to 10
 
 sudo  hdparm -y /dev/partition_name # set Hard disk to standby mode
-grep -iwrn 'path-to-folder' -e 'pattern' -C5 # search for text in files:  i for ignore case, r for recurrent directory search, n for line number, w for match whole word, -Cn for n lines of context  https://stackoverflow.com/a/30138655/1273751
 
 # check IP address of URLs
 dig +short <url>  # e.g. <url>=google.com
