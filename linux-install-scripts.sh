@@ -51,3 +51,7 @@ sudo apt-get install alacarte
 # install Octave
 sudo apt install octave
 sudo apt-get install octave-statistics
+
+# install screen
+sudo apt-get install screen
+

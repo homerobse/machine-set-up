@@ -37,3 +37,7 @@ Take all commits from the branch, squash them into 1 commit, and merge it with y
 https://tech.findmypast.com/do-not-wip/
     git merge --squash <branch-name>
 
+# ssh server
+
+How to install an ssh server:
+https://www.cyberciti.biz/faq/ubuntu-linux-install-openssh-server/

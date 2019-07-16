@@ -1,0 +1,24 @@
+# taken from https://unix.stackexchange.com/a/26265/280216
+# skip the startup message
+startup_message off
+
+# Change default scrollback value for new windows
+defscrollback 10000
+
+# look and feel
+#caption always "%{= bb}%{+b w}%n %t %h %=%l %H %c"
+
+#hardstatus alwayslastline "%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"
+
+# this line from this other answer to the same question https://unix.stackexchange.com/a/319364/280216
+hardstatus alwayslastline "%{kb}%{c}[%{w}%D %d/%m/%Y %c] %{w}%-w%{gk}%n %t%{wb}%+w %=%{c}[%{W}%H %l%{c}]"
+
+#activity "Activity in %t(%n)"
+
+bindkey -k k6 prev
+bindkey -k k7 next
+
+# shelltitle "shell"
+#shelltitle "$ |shell:"
+#shell -$SHELL
+
