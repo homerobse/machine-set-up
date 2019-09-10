@@ -36,6 +36,7 @@ Get only the remote version when in a conflict
 Take all commits from the branch, squash them into 1 commit, and merge it with your master branch.
 https://tech.findmypast.com/do-not-wip/
     git merge --squash <branch-name>
+That will unstage and uncommit the changes from the branch_name into the current branch for example, master.
 
 # ssh server
 
