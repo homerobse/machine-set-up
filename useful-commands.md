@@ -42,3 +42,6 @@ That will unstage and uncommit the changes from the branch_name into the current
 
 How to install an ssh server:
 https://www.cyberciti.biz/faq/ubuntu-linux-install-openssh-server/
+
+How to have access to GUI programs when accessing a server through ssh (useful for plotting data that was run in the server):
+`ssh -X user@ip-address`
