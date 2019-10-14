@@ -22,7 +22,8 @@ source <filename>
 # or
 . <filename>
 
-# to add/remove something to the dash menu check the following folders https://askubuntu.com/questions/516207/how-to-remove-duplicate-entries-in-dash/516346#516346
+# to add/remove something to the dash menu check the following folders 
+# https://askubuntu.com/questions/516207/how-to-remove-duplicate-entries-in-dash/516346#516346
 # /usr/share/applications
 # ~/.local/share/applications
 # /var/lib/snapd/desktop/applications
@@ -45,3 +46,7 @@ https://www.cyberciti.biz/faq/ubuntu-linux-install-openssh-server/
 
 How to have access to GUI programs when accessing a server through ssh (useful for plotting data that was run in the server):
 `ssh -X user@ip-address`
+
+## mount remote filesystem  https://www.tecmint.com/sshfs-mount-remote-linux-filesystem-directory-using-ssh/
+`sudo sshfs -o allow_other homero@163.1.53.146:/home/homero/ croissant`
+
