@@ -1,6 +1,6 @@
 top # shows the processes running
 htop # similar to top, but more interactive
-xargs # I think it is useful to execute commands giving parameters that I computed with bash. E.g. to print contents of searched files: ls | grep filename | xargs cat
+xargs # useful to run commands with parameters coming from other commands previously run. E.g. to print contents of searched files: "ls | grep filename | xargs cat" or kill a searched process "pgrep inkscape | xargs kill"
 uname -r # check kernel version
 fc-match <font-name> # check what font does fontconfig match with the given pattern (e.g. fc-match helvetica)
 
@@ -41,7 +41,7 @@ That will unstage and uncommit the changes from the branch_name into the current
 
 # ssh server
 
-How to install an ssh server:
+How to install an ssh server (I have never done it yet):
 https://www.cyberciti.biz/faq/ubuntu-linux-install-openssh-server/
 
 How to have access to GUI programs when accessing a server through ssh (useful for plotting data that was run in the server):
