@@ -41,6 +41,9 @@ source fixes/fix-cedilla
 
 # to preview files in GNOME: install Gnome Sushi
 # https://www.howtogeek.com/277987/how-to-quickly-preview-a-file-in-ubuntus-file-manager-like-quick-look-in-macos/
+# the two commands below have NOT been tested, I followed the instructions in the link above
+sudo apt-get install gnome-sushi
+sudo apt-get install unoconv
 
 # install latex https://tex.stackexchange.com/questions/134365/installation-of-texlive-full-on-ubuntu-12-04
 sudo apt-get install texlive
