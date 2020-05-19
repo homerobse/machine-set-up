@@ -19,5 +19,5 @@ alias gendir='cd ~/dphil/gen-learn/'
 alias jnb='jupyter-notebook'
 alias gst='git status'
 alias gpsh='git push'
-gcmt () { git commit -m $1;};
+gcmt () { git commit -m "$1";};
 
