@@ -1,8 +1,11 @@
+# Miscellaneous commands
+
 top # shows the processes running
 htop # similar to top, but more interactive
 xargs # useful to run commands with parameters coming from other commands previously run. E.g. to print contents of searched files: "ls | grep filename | xargs cat" or kill a searched process "pgrep inkscape | xargs kill"
 uname -r # check kernel version
 fc-match <font-name> # check what font does fontconfig match with the given pattern (e.g. fc-match helvetica)
+$ date +'%Y%m%d-%H%M%S'
 
 # search
 grep -o -e expr1 -e expr2 # -o makes grep output only the matched expression, without its context. -e is used for starting a regular expression and we can use more than one
