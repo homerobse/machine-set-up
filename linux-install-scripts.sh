@@ -47,6 +47,7 @@ sudo apt-get install unoconv
 
 # install latex https://tex.stackexchange.com/questions/134365/installation-of-texlive-full-on-ubuntu-12-04
 # maybe check using docker to install it in the hdd partition https://tex.stackexchange.com/a/374881/170518
+# also check https://tex.stackexchange.com/questions/49936/how-to-move-tex-live-to-another-partition-data although the path mentioned seemed different from what I have in my system on 2020-05-29
 sudo apt-get install texlive
 
 # install alacarte: program for managing icons in the applications dash
