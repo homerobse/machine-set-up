@@ -59,4 +59,5 @@ sudo apt-get install octave-statistics
 
 # install screen
 sudo apt-get install screen
+# and add .screenrc file to home folder afterwards
 

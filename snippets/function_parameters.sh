@@ -1,12 +1,11 @@
 #!/bin/bash
 
-l="1 2 3 4 5"
+var_list="1 2 30 4 5"
 
 function f(){
-  for x in $l; do 
+  for x in $var_list; do 
     echo $1
-    > "homero"
-    echo hey!
+    echo hey! $x
   done
 }
 f '23'
