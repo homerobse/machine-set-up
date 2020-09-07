@@ -53,6 +53,9 @@ sudo apt-get install texlive
 # install alacarte: program for managing icons in the applications dash
 sudo apt-get install alacarte
 
+# install Blueman, a bluetooth Manager https://askubuntu.com/a/1168829/315699
+sudo apt-get install blueman
+
 # install Octave
 sudo apt install octave
 sudo apt-get install octave-statistics
