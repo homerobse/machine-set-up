@@ -30,3 +30,7 @@ find ~/.cache/ -depth -type f -atime +365
 # to delete
 find ~/.cache/ -depth -type f -atime +365 -delete
 
+
+# if using spotify, check https://community.spotify.com/t5/Desktop-Linux/Linux-Cache-Location-not-being-respected/td-p/1266411 to change cache storage location
+# $rm -rf <current cache dir> 
+# $ln -s <new cache location in HDD. e.g. /home/homero/hd/software/spotify_cache/> <current cache dir>  # creates link to new location
