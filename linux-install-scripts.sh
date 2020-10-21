@@ -64,3 +64,10 @@ sudo apt-get install octave-statistics
 sudo apt-get install screen
 # and add .screenrc file to home folder afterwards
 
+# install screen-brightness
+sudo add-apt-repository ppa:apandada1/brightness-controller
+sudo apt-get install brightness-controller
+
+# install exiftool, cli command to alter file metadata
+sudo apt-get install exiftool
+
