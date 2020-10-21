@@ -51,5 +51,5 @@ How to have access to GUI programs when accessing a server through ssh (useful f
 `ssh -X user@ip-address`
 
 ## mount remote filesystem  https://www.tecmint.com/sshfs-mount-remote-linux-filesystem-directory-using-ssh/
-`sudo sshfs -o allow_other homero@163.1.53.146:/home/homero/ croissant`
+`sudo sshfs -o allow_other homero@163.1.53.146:/home/homero/ <name of remote server>`
 
