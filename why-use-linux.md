@@ -15,3 +15,5 @@ Some reasons why Linux can become annoying:
 * Skype version for Linux does not show the pointer
 * Zoom version for Linux has uglier interface and some bugs when using in multiple monitors
 * Issues with driver when moving photos from my phones' SD drive
+* Okular inline notes cannot have transparent background. Chrome does not visualize its inline notes.
+* Mindjet manager not available for Linux. Freemind manager not great.
