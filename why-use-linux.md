@@ -13,7 +13,7 @@ Some reasons why Linux can become annoying:
 * MS Powerpoint doesn't work and google slides videos are not available offline;
 * Illustrator doesn't work well in Wine, Inkscape gets slow when there are many elements;
 * Skype version for Linux does not show the pointer
-* Zoom version for Linux has uglier interface and some bugs when using in multiple monitors
+* Zoom version for Linux has uglier interface and bugs in displaying participants when using in multiple monitors
 * Issues with driver when moving photos from my phones' SD drive
-* Okular inline notes cannot have transparent background. Chrome does not visualize its inline notes.
+* Okular inline notes cannot have transparent background. Chrome does not visualize its inline notes. Adobe reader version in Ubuntu 16.04 had no commenting and highlighting features
 * Mindjet manager not available for Linux. Freemind manager not great.
