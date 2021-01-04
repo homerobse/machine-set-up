@@ -50,6 +50,14 @@ https://www.cyberciti.biz/faq/ubuntu-linux-install-openssh-server/
 How to have access to GUI programs when accessing a server through ssh (useful for plotting data that was run in the server):
 `ssh -X user@ip-address`
 
+
+## ssh to github (from pages linked at https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh)
+Run `eval $(ssh-agent -s)` and `ssh-add -l -E sha256` the output should be similar to what is at Github.
+
+To check the ssh connection: `ssh -T git@github.com`, or `ssh -vT git@github.com`
+
+But this is not working yet, potentially due to WSL problems as some links indicate (2020-01-04)
+
 ## mount remote filesystem  https://www.tecmint.com/sshfs-mount-remote-linux-filesystem-directory-using-ssh/
 `sudo sshfs -o allow_other homero@163.1.53.146:/home/homero/ <name of remote server>`
 
