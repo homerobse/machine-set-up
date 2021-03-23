@@ -21,9 +21,9 @@ dig +short <url>  # e.g. <url>=google.com
 host <url>  # e.g. <url>=google.com
 
 # run a command https://superuser.com/questions/46139/what-does-source-do
-source <filename>
-# or
-. <filename>
+`source <filename>`
+
+`. <filename>`
 
 # to add/remove something to the dash menu check the following folders 
 # https://askubuntu.com/questions/516207/how-to-remove-duplicate-entries-in-dash/516346#516346
