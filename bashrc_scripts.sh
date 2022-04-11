@@ -1,5 +1,9 @@
 ## Homero's preferences ##
 
+# Change shell prompt color https://www.cyberciti.biz/faq/bash-shell-change-the-color-of-my-shell-prompt-under-linux-or-unix/
+# default is PS1=\u@\h:\w\$
+export PS1="\e[0;32m\u@\h:\w\\$ \e[m"
+
 export PATH=/home/homero/.local/bin/:$PATH
 
 export CONDA_CHANGEPS1=false  # to avoid the (base) ahead of my terminal
@@ -14,6 +18,10 @@ alias oxdir='cd ~/hd/Dropbox/oxford'
 alias thdir='cd ~/hd/Dropbox/oxford/proj/thesis'
 alias dgdir='cd ~/dphil/ufrn/dg-cells'
 alias gendir='cd ~/dphil/gen-learn/'
+alias dhdd='cd /mnt/d/'
+
+# automatically cd to oxford directory when start
+oxdir
 
 # other shortcuts
 alias jnb='jupyter-notebook'
