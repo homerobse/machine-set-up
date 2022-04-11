@@ -29,11 +29,11 @@ export LIBGL_ALWAYS_INDIRECT=1
 export XDG_RUNTIME_DIR=/home/homero/runtimedir
 export RUNLEVEL=3
 
+# In wsl, to make jupyter notebook automatically open the browser. Source: https://towardsdatascience.com/running-jupyter-notebook-on-wsl-while-using-firefox-on-windows-5a47ebfae4c1
+export BROWSER="/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
+# export BROWSER="/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe"
+
 # set colors for ls command output
 # see https://askubuntu.com/a/466203/315699 for reference of what each number means (style/background color/font color) 
 LS_COLORS='ow=01;90;102'
 export LS_COLORS
-
-# I can't remember how this BROWSER variable appeared here. Not sure if it was me or a program who put it here. Maybe it was to make jupyter notebook automatically open the browser
-export BROWSER="/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe"
-
