@@ -1,0 +1,2 @@
+# for X server on WSL
+https://sourceforge.net/projects/vcxsrv/
