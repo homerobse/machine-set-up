@@ -1,0 +1,27 @@
+https://www.tecmint.com/install-ubuntu-16-04-alongside-with-windows-10-or-8-in-dual-boot/
+
+https://help.ubuntu.com/community/SwapFaq
+
+https://www.quora.com/How-can-I-increase-the-size-of-available-shrink-space-for-a-partition-of-my-laptops-hard-drive
+
+https://medium.com/@terajournal/increasing-size-of-available-shrink-space-for-hard-drive-partition-in-windows-8fffa50535d3
+
+*solved - gnome stuck
+https://askubuntu.com/questions/945703/ubuntu-gnome-16-04-3-gets-stuck-at-boot-on-dell-xps-15-9560
+https://askubuntu.com/questions/38780/how-do-i-set-nomodeset-after-ive-already-installed-ubuntu
+
+touch pad
+
+https://askubuntu.com/questions/690138/synaptics-touchpad-tap-to-click-is-not-working-in-ubuntu-15-10gnome7
+https://wiki.archlinux.org/index.php/Touchpad_Synaptics#Frequently_used_options
+
+https://forum.manjaro.org/t/gnome-touchpad-settings-gone-solved/1147/3
+
+*solved - numpad end key
+https://ubuntuforums.org/showthread.php?t=1825407
+
+*sharing data accross linux and windows
+https://lifehacker.com/5702815/the-complete-guide-to-sharing-your-data-across-multiple-operating-systems
+
+* onedrive client information
+https://github.com/skilion/onedrive
