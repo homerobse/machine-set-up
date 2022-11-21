@@ -1,0 +1,3 @@
+# add the text below into a file ~/.ssh/config to keep ssh connections alive
+Host *
+    ServerAliveInterval 240
