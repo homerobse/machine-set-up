@@ -6,11 +6,11 @@ Add the hyperlink to your document.
 From the “Home” tab, click the small arrow icon in the lower-right corner of the “Styles” box. Alternately, you can use Alt+Ctrl+Shift+S .
 In the “Styles” menu, hover your mouse pointer over “Hyperlink“, and then click the triangle that appears to the right. From the drop-down menu that appears, select “Modify…“.
 In the “Formatting” section, choose the color you want to use, then click “OK“.
+
 Visited Hyperlinks
 To change the color of hyperlinks that have been visited or clicked, follow these instructions:
 
-From the “Home” tab, select the small arrow icon in the lower-right corner of the “Styles” box. Alternately, you can use Alt+Ctrl+Shift+S .
-Select the “Options…” link in the lower-right corner.
+In the Styles menu, select the “Options…” link in the lower-right corner.
 In the “Select styles to show:” drop-down menu, select “All styles“, then select “OK“. You will now have an option for “FollowedHyperlink” in the “Styles” list.
 In the “Styles” menu, hover your mouse pointer over “FollowedHyperlink”, and then click the triangle that appears to the right. From the drop-down menu that appears, select “Modify…“.
 In the “Formatting” section, choose the color you want to use, then click “OK“.
