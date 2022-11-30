@@ -20,7 +20,7 @@ alias dgdir='cd ~/dphil/ufrn/dg-cells'
 alias gendir='cd ~/dphil/gen-learn/'
 alias dhdd='cd /mnt/d/'
 
-# automatically cd to oxford directory when start
+# automatically cd to directory below when start
 oxdir
 
 # other shortcuts
