@@ -14,3 +14,12 @@ In the Styles menu, select the “Options…” link in the lower-right corner.
 In the “Select styles to show:” drop-down menu, select “All styles“, then select “OK“. You will now have an option for “FollowedHyperlink” in the “Styles” list.
 In the “Styles” menu, hover your mouse pointer over “FollowedHyperlink”, and then click the triangle that appears to the right. From the drop-down menu that appears, select “Modify…“.
 In the “Formatting” section, choose the color you want to use, then click “OK“.
+
+## Style sheet
+White fonts
+Add dotx file to:
+Path: "C:\Users\homer\AppData\Roaming\Microsoft\QuickStyles"
+
+# PDF Reader set-up
+To enable single-key shortcuts, open the Preferences dialog box (Edit > Preferences), and under General, select the Use Single-Key Accelerators To Access Tools option.
+https://helpx.adobe.com/acrobat/using/keyboard-shortcuts.html
