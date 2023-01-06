@@ -15,10 +15,7 @@ export CONDA_CHANGEPS1=true  # so that it shows (env) ahead of the terminal afte
 
 # shortcut commands to favourite folders
 alias oxdir='cd ~/hd/Dropbox/oxford'
-alias thdir='cd ~/hd/Dropbox/oxford/proj/thesis'
-alias dgdir='cd ~/dphil/ufrn/dg-cells'
 alias gendir='cd ~/dphil/gen-learn/'
-alias dhdd='cd /mnt/d/'
 
 # automatically cd to directory below when start
 oxdir
