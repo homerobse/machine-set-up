@@ -1,8 +1,8 @@
 ## Homero's preferences ##
 
 # Change shell prompt color https://www.cyberciti.biz/faq/bash-shell-change-the-color-of-my-shell-prompt-under-linux-or-unix/
-# default is PS1=\u@\h:\w\$
-export PS1="\e[0;32m\u@\h:\w\\$ \e[m"
+# default is PS1=\u@\h:\w\$   # u - username; h - hostname; w - current working directory;
+export PS1="\[\e[0;32m\]\u@\h:\w\$\[ \e[m\]"  # \e[0;32m start and \e[m end color scheme. 0;32 is the code for green color; enclosed beginning and end with \[ and \] (about enclosing in \[\] check https://unix.stackexchange.com/a/105974/280216)
 
 export PATH=/home/homero/.local/bin/:$PATH
 
@@ -37,6 +37,10 @@ export RUNLEVEL=3
 # In wsl, to make jupyter notebook automatically open the browser. Source: https://towardsdatascience.com/running-jupyter-notebook-on-wsl-while-using-firefox-on-windows-5a47ebfae4c1
 export BROWSER="/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
 # export BROWSER="/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe"
+# then run `$jupyter-notebook --generate-config`, and change one of the commented lines to False `c.NotebookApp.use_redirect_file = False`
+# Source: https://stackoverflow.com/questions/59096651/change-startup-url-in-jupyter-notebook 
+
+
 
 # set colors for ls command output
 # see https://askubuntu.com/a/466203/315699 for reference of what each number means (style/background color/font color) 
