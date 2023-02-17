@@ -1,2 +1,15 @@
-# for X server on WSL
-https://sourceforge.net/projects/vcxsrv/
+# install Powershell 7
+winget install --id Microsoft.Powershell --source winget
+
+# Enable hibernate
+# https://www.groovypost.com/howto/enable-hibernate-mode-windows-10/
+
+# MEGA
+# https://mega.io/desktop
+# there is a winget command as well
+
+# WinDirStat - disk usage analyzer
+# https://windirstat.net/permalink.html
+
+# for X server on WSL (no longer necessary in Windows 11)
+# https://sourceforge.net/projects/vcxsrv/

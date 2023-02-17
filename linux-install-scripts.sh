@@ -1,14 +1,21 @@
 # install Miniconda
 cd
-wget https://rehttps://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 chmod +x Miniconda3-latest-Linux-x86_64.sh
 ./Miniconda3-latest-Linux-x86_64.sh
-rm Miniconda3-latest-Linux-x86_64.sh
+rm Miniconda3-latest-Linux-x86_64.sh  # install miniconda at /home/homero/miniconda3/software/
 
-# install ipython, numpy and matplotlib. Assuming miniconda was installed at /home/homero/miniconda3/software/
+# add conda-forge channel. Source: https://conda-forge.org/docs/user/introduction.html#how-can-i-install-packages-from-conda-forge
+software/miniconda3/bin/conda config --add channels conda-forge
+
+# install ipython, numpy and matplotlib
 software/miniconda3/bin/conda install numpy matplotlib ipython
 
-# python notebooks
+# install jupyter-lab https://towardsdatascience.com/how-to-set-up-anaconda-and-jupyter-notebook-the-right-way-de3b7623ea4a
+software/miniconda3/bin/conda install -c conda-forge jupyterlab 
+software/miniconda3/bin/conda install -c conda-forge nb_conda_kernels
+
+# or use pip instead maybe?
 pip install jupyter
 pip install jupyterthemes
 
