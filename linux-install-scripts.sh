@@ -1,30 +1,54 @@
-# install Miniconda
 cd
+mkdir projects
+mkdir software
+
+
+# install Miniconda
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 chmod +x Miniconda3-latest-Linux-x86_64.sh
 ./Miniconda3-latest-Linux-x86_64.sh
-rm Miniconda3-latest-Linux-x86_64.sh  # install miniconda at /home/homero/miniconda3/software/
+rm Miniconda3-latest-Linux-x86_64.sh  # install miniconda at /home/<username>/software/miniconda3/
 
 # add conda-forge channel. Source: https://conda-forge.org/docs/user/introduction.html#how-can-i-install-packages-from-conda-forge
 software/miniconda3/bin/conda config --add channels conda-forge
+# conda config --set channel_priority strict  # to understand if I want to set up strict: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-channels.html
+software/miniconda3/bin/conda update conda  # updates conda to make sure it uses packages from conda-forge
 
 # install ipython, numpy and matplotlib
 software/miniconda3/bin/conda install numpy matplotlib ipython
-
 # install jupyter-lab https://towardsdatascience.com/how-to-set-up-anaconda-and-jupyter-notebook-the-right-way-de3b7623ea4a
-software/miniconda3/bin/conda install -c conda-forge jupyterlab 
-software/miniconda3/bin/conda install -c conda-forge nb_conda_kernels
+software/miniconda3/bin/conda install -c conda-forge jupyterlab nb_conda_kernels
+# install natsort a package that I use in my journal python script (https://github.com/homerobse/work-journal) to order the filenames 
+software/miniconda3/bin/conda install natsort
 
 # or use pip instead maybe?
-pip install jupyter
-pip install jupyterthemes
-
-# automatically import numpy and matplotlib in ipython
-cp homero_ipython_custom_start.py ~/.ipython/profile_default/startup/
+#pip install jupyter jupyterthemes
 
 # git
-sudo apt-get update sudo apt-get install gitk # https://command-not-found.com/gitk
+## Generate new access key to github https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+ssh-keygen -t ed25519 -C "homerobse@gmail.com"
+# cat ~/.ssh/<keyfilename>.pub  # copy the public key and add it to SSH and GPG Keys in "New SSH Key"
+
+## clone common git repos
+cd ~/projects/
+git clone git@github.com:homerobse/machine-set-up.git
+git clone git@github.com:homerobse/snippets.git
+
+## install gitk and git-gui
+sudo apt-get update
+sudo apt-get install gitk # https://command-not-found.com/gitk
 sudo apt install git-gui
+
+## config git
+git config --global user.email "homero.esmeraldo@gmail.com"
+git config --global user.name "Homero Esmeraldo"
+
+
+# automatically import numpy and matplotlib in ipython
+cp ~/projects/machine-set-up/homero_ipython_custom_start.py ~/.ipython/profile_default/startup/
+
+# add my preferences to .bashrc TODO: clean-up bashrc_scripts to only leave the currently useful parts
+# echo ~/projects/machine-set-up/bashrc_scripts.sh >> ~/.bashrc
 
 # install latex https://tex.stackexchange.com/questions/134365/installation-of-texlive-full-on-ubuntu-12-04
 # maybe check using docker to install it in the hdd partition https://tex.stackexchange.com/a/374881/170518
