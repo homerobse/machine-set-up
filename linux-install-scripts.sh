@@ -38,6 +38,8 @@ git clone git@github.com:homerobse/snippets.git
 sudo apt-get update
 sudo apt-get install gitk # https://command-not-found.com/gitk
 sudo apt install git-gui
+## ignore different line endings across windows/linux Source: https://stackoverflow.com/a/52694438/1273751
+git config --global core.autocrlf input
 
 ## config git
 git config --global user.email "homero.esmeraldo@gmail.com"

@@ -12,3 +12,6 @@ winget install -e --id Mega.MEGASync
 
 # for X server on WSL (no longer necessary in Windows 11)
 # https://sourceforge.net/projects/vcxsrv/
+
+# Meld merge (for diff files)
+# http://meldmerge.org/
