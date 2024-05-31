@@ -64,7 +64,7 @@ https://www.tecmint.com/sshfs-mount-remote-linux-filesystem-directory-using-ssh/
 `sudo sshfs -o allow_other homero@163.1.53.146:/home/homero/ <name of remote server>`
 
 ## automount filesystem
-(taken from https://www.linuxbabe.com/desktop-linux/how-to-automount-file-systems-on-linux)
+How to automount a file system in Linux (taken from https://www.linuxbabe.com/desktop-linux/how-to-automount-file-systems-on-linux)
 Check the name of your UUID and filesystem type
 `$ sudo blkid`
 Create the mount point
@@ -72,5 +72,5 @@ Create the mount point
 Add the following line in /etc/fstab separating these items with Tab key.
 `UUID=<uuid-of-your-drive>  <mount-point>  <file-system-type>  <mount-option>  <dump>  <pass>`
 e.g. UUID=<uuid-of-ntfs-file-system>   /mnt/ntfs   ntfs   defaults  0  2
-Save and close the file. Then reboot your system to see the if it works. So that’s how you automount a file system in Linux.
+Save and close the file. Then reboot your system to see if it works.
 
