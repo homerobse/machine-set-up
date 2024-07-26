@@ -51,6 +51,17 @@ How to have access to GUI programs when accessing a server through ssh (useful f
 `ssh -X user@ip-address`
 
 
+### rsync
+Create file `deploy.sh` containing the following
+host='host.url.com'  # example 'bluth.snl.salk.edu'
+remote_folder='path/to/folder'  # example 'neuromllab/representation'
+rsync -avr -e 'ssh -l hesmeraldo' --exclude '__pycache__' --exclude '*.py[cod]' --exclude '.idea' --exclude '.ipynb_checkpoints' \
+--exclude '.git' . $host:$remote_folder
+# a: archive, v: verbose, r: recursive
+# syntax: `ssh -l <ssh-user>`  # -l is for login_name on the remote machine
+
+# to connect directly just do `ssh hesmeraldo@$host`
+
 ## ssh to Github
 (from pages linked at https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh)
 Run `eval $(ssh-agent -s)` and `ssh-add -l -E sha256` the output should be similar to what is at Github.
