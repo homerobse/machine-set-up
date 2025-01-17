@@ -2,6 +2,8 @@ cd
 mkdir projects
 mkdir software
 
+SETUP_FOLDER=~/projects/machine-set-up
+CONDA=~/software/miniconda3/bin/conda
 
 # install Miniconda
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -10,16 +12,16 @@ chmod +x Miniconda3-latest-Linux-x86_64.sh
 rm Miniconda3-latest-Linux-x86_64.sh  # install miniconda at /home/<username>/software/miniconda3/
 
 # add conda-forge channel. Source: https://conda-forge.org/docs/user/introduction.html#how-can-i-install-packages-from-conda-forge
-software/miniconda3/bin/conda config --add channels conda-forge
+$CONDA config --add channels conda-forge
 # conda config --set channel_priority strict  # to understand if I want to set up strict: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-channels.html
-software/miniconda3/bin/conda update conda  # updates conda to make sure it uses packages from conda-forge
+$CONDA update conda  # updates conda to make sure it uses packages from conda-forge
 
 # install ipython, numpy and matplotlib
-software/miniconda3/bin/conda install numpy matplotlib ipython
+$CONDA install numpy matplotlib ipython
 # install jupyter-lab https://towardsdatascience.com/how-to-set-up-anaconda-and-jupyter-notebook-the-right-way-de3b7623ea4a
-software/miniconda3/bin/conda install -c conda-forge jupyterlab nb_conda_kernels
+$CONDA install -c conda-forge jupyterlab nb_conda_kernels
 # install natsort a package that I use in my journal python script (https://github.com/homerobse/work-journal) to order the filenames 
-software/miniconda3/bin/conda install natsort
+$CONDA install natsort
 
 # or use pip instead maybe?
 #pip install jupyter jupyterthemes
@@ -46,9 +48,12 @@ git config --global core.autocrlf input
 git config --global user.email "homero.esmeraldo@gmail.com"
 git config --global user.name "Homero Esmeraldo"
 
+## config ssh
+cat $SETUP_FOLDER/config.ssh > ~/.ssh/config
+chmod 600 ~/.ssh/config
 
 # automatically import numpy and matplotlib in ipython
-cp ~/projects/machine-set-up/homero_ipython_custom_start.py ~/.ipython/profile_default/startup/
+cp $SETUP_FOLDER/homero_ipython_custom_start.py ~/.ipython/profile_default/startup/
 
 # add my preferences to .bashrc TODO: clean-up bashrc_scripts to only leave the currently useful parts
 # echo ~/projects/machine-set-up/bashrc_scripts.sh >> ~/.bashrc
