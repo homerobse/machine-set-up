@@ -49,7 +49,7 @@ git config --global user.email "homero.esmeraldo@gmail.com"
 git config --global user.name "Homero Esmeraldo"
 
 ## config ssh
-cat $SETUP_FOLDER/config.ssh > ~/.ssh/config
+cat $SETUP_FOLDER/ssh_config > ~/.ssh/config
 chmod 600 ~/.ssh/config
 
 # automatically import numpy and matplotlib in ipython
