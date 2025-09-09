@@ -1,3 +1,68 @@
+## vim
+https://stackoverflow.com/a/15588798/1273751
+
+To **comment** out blocks in vim:
+press Esc (to leave editing or other mode)
+hit ctrl+v (visual block mode), or ctrl+Q on Windows Terminal
+use the ↑/↓ arrow keys to select lines you want (it won't highlight everything - it's OK!)
+Shift+i (capital I)
+insert the text you want, e.g. %
+press Esc Esc
+
+To **uncomment** blocks in vim:
+press Esc (to leave editing or other mode)
+hit ctrl+v (visual block mode), or ctrl+Q on Windows Terminal
+use the ↑/↓ arrow keys to select the lines to uncomment.
+
+If you want to select multiple characters, use one or combine these methods:
+
+use the left/right arrow keys to select more text
+to select chunks of text use shift + ←/→ arrow key
+you can repeatedly push the delete keys below, like a regular delete button
+press d or x to delete characters, repeatedly if necessary
+
+## screen
+ctrl+a A: give the tab a new name
+
+## git tips
+
+Get only the remote version when in a conflict
+    git checkout --theirs PATH/FILE
+
+Take all commits from the branch, squash them into 1 commit, and merge it with your master branch.
+https://tech.findmypast.com/do-not-wip/
+    git merge --squash <branch-name>
+That will unstage and uncommit the changes from the branch_name into the current branch for example, master.
+
+## ssh server
+
+How to install an ssh server (I have never done it yet):
+https://www.cyberciti.biz/faq/ubuntu-linux-install-openssh-server/
+
+How to have access to GUI programs when accessing a server through ssh (useful for plotting data that was run in the server):
+`ssh -X user@ip-address`
+
+
+## rsync
+Create file `deploy.sh` containing the following
+
+    host='host.url.com'  # example 'bluth.snl.salk.edu'
+    remote_folder='path/to/folder'  # example 'neuromllab/representation'
+    
+    rsync -avr -e 'ssh -l hesmeraldo' --exclude '__pycache__' --exclude '*.py[cod]' --exclude '.idea' --exclude '.ipynb_checkpoints' \
+    --exclude '.git' . $host:$remote_folder
+    # a: archive, v: verbose, r: recursive
+    # syntax: `ssh -l <ssh-user>`  # -l is for login_name on the remote machine
+    # to connect directly just do `ssh hesmeraldo@$host`
+
+## ssh to Github
+(from pages linked at https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh)
+Run `eval $(ssh-agent -s)` and `ssh-add -l -E sha256` the output should be similar to what is at Github.
+
+To check the ssh connection: `ssh -T git@github.com`, or `ssh -vT git@github.com`
+
+But this is not working yet, potentially due to WSL problems as some links indicate (2020-01-04)
+
 ## Miscellaneous commands
 
 top # shows the processes running
@@ -31,44 +96,6 @@ https://askubuntu.com/questions/516207/how-to-remove-duplicate-entries-in-dash/5
     # ~/.local/share/applications
     # /var/lib/snapd/desktop/applications
 
-
-## git tips
-
-Get only the remote version when in a conflict
-    git checkout --theirs PATH/FILE
-
-Take all commits from the branch, squash them into 1 commit, and merge it with your master branch.
-https://tech.findmypast.com/do-not-wip/
-    git merge --squash <branch-name>
-That will unstage and uncommit the changes from the branch_name into the current branch for example, master.
-
-## ssh server
-
-How to install an ssh server (I have never done it yet):
-https://www.cyberciti.biz/faq/ubuntu-linux-install-openssh-server/
-
-How to have access to GUI programs when accessing a server through ssh (useful for plotting data that was run in the server):
-`ssh -X user@ip-address`
-
-
-### rsync
-Create file `deploy.sh` containing the following
-host='host.url.com'  # example 'bluth.snl.salk.edu'
-remote_folder='path/to/folder'  # example 'neuromllab/representation'
-rsync -avr -e 'ssh -l hesmeraldo' --exclude '__pycache__' --exclude '*.py[cod]' --exclude '.idea' --exclude '.ipynb_checkpoints' \
---exclude '.git' . $host:$remote_folder
-# a: archive, v: verbose, r: recursive
-# syntax: `ssh -l <ssh-user>`  # -l is for login_name on the remote machine
-
-# to connect directly just do `ssh hesmeraldo@$host`
-
-## ssh to Github
-(from pages linked at https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh)
-Run `eval $(ssh-agent -s)` and `ssh-add -l -E sha256` the output should be similar to what is at Github.
-
-To check the ssh connection: `ssh -T git@github.com`, or `ssh -vT git@github.com`
-
-But this is not working yet, potentially due to WSL problems as some links indicate (2020-01-04)
 
 ## mount remote filesystem
 https://www.tecmint.com/sshfs-mount-remote-linux-filesystem-directory-using-ssh/
