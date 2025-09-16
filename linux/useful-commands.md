@@ -22,7 +22,9 @@ you can repeatedly push the delete keys below, like a regular delete button
 press d or x to delete characters, repeatedly if necessary
 
 ## screen
-ctrl+a A: give the tab a new name
+`ctrl+a A`: give the tab a new name;
+`screen -S <session PID> -X sessionname <mySessionName>` or `C-a :sessionname <mySessionName>`: give the session a name;
+`screen -r <mySessionName>` or `screen -r <session PID>`: reactivate detached session.
 
 ## git tips
 
