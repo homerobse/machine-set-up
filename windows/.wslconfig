@@ -1,0 +1,3 @@
+# solves connectivity problem when connected to VPN
+[wsl2]
+networkingMode=mirrored 
