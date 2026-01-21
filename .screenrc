@@ -15,10 +15,11 @@ hardstatus alwayslastline "%{kb}%{c}[%{w}%D %d/%m/%Y %c] %{w}%-w%{gk}%n %t%{wb}%
 
 #activity "Activity in %t(%n)"
 
-bindkey -k k6 prev
-bindkey -k k7 next
+bindkey -k k6 prev  # F6 will move to previous tab
+bindkey -k k7 next  # F7 will move to previous tab
 
 # shelltitle "shell"
 #shelltitle "$ |shell:"
 #shell -$SHELL
 
+altscreen on  # this makes screen restore the cursor to the correct position after detaching a session
