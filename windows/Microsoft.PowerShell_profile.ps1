@@ -1,3 +1,4 @@
+# this file is located at C:\Users\hbse\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
 # navigation
 function gotorepdir { set-location "C:\Users\hbse\Dropbox\ucsd\mattarlab\replay" }
 function gotonmldir { set-location "C:\Users\hbse\Dropbox\ucsd\neuromllab\" }
