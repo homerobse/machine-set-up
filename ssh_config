@@ -1,3 +1,8 @@
 # contents of file ~/.ssh/config with permission 600 -> to keep ssh connections alive
 Host *
     ServerAliveInterval 240
+
+#Host <short_name_for_host>
+#    Hostname <hostname.adress.com>
+#    User <username>
+#    IdentityFile <path_to_identity_file>
